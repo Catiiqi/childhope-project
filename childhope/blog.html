@@ -1,0 +1,107 @@
+<?php
+
+session_start();
+    
+if(isset($_SESSION['email']))
+{
+    header("Location: login.html");
+    exit();
+}else{ ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChildHope Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+<body>
+<section class="sub-header4">
+    <nav>
+        <a href="index.html"><img src="img/logo1.png" alt="Logo"></a>
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-times" onclick="hideMenu()"></i> 
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li> 
+                <li><a href="our_works.html">OUR WORK</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="join us.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+<div class="text-box">
+        <h1>Our Stories </h1>
+</section>
+<!-- posts -->
+<section class="post">
+ 
+    <!-- box 1 -->
+    <div class="post-box">
+        <img src="img/adopt1.jpg" alt="" class="post-img">
+        <a href="box1.html" class="post-title">
+            Benefits of Adoption
+        </a>
+        <p class="post-decription"> 
+            Many women who find themselves pregnant unintentionally may at first think, 
+            "I could never give my baby away!" But once they hear about all the benefits of adoption 
+            and the kind people willing to give a caring home, their attitudes frequently shift</p>
+    </div>
+     <!-- box 2 -->
+     <div class="post-box">
+        <img src="img/box2.jpeg" alt="" class="post-img">
+        <a href="box2.html" class="post-title selectable-text">
+            Campaigns and Fundraising
+        </a>
+        <p class="post-description">Information about ongoing campaigns, fundraising efforts, and how individuals can get involved</p>
+    </div>
+     <!-- box 3 -->
+     <div class="post-box">
+        <img src="img/volun.jpg" alt="" class="post-img">
+        <a href="box3.html" class="post-title selectable-text">
+            Donor and Volunteer Recognition
+        </a>
+        <p class="post-description">Recognition of donors, sponsors, and volunteers who support the foundation</p>
+    </div>
+     <!-- box 6 -->
+     <div class="post-box">
+        <img src="img/awareness.jpg" alt="" class="post-img">
+        <a href="box4.html" class="post-title">
+            Advocacy and Awareness
+        </a>
+        <p class="post-description">Posts advocating for children's rights and raising awareness about relevant issues</p>
+    </div>
+    
+</section>
+<!-- FOOTER -->
+<section class="footer">
+    <h4> Let's discuss!</h4>
+    <p>Feel free to ask if you have more questions about the adoption process</p>
+    <div class="icons">
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fas fa-envelope"></i>
+          </div>
+          
+    </div>
+    <hr class="line">
+    <h5>© ChildHope Copyright 2024</h5>
+    
+</section>
+ 
+
+</body>
+</html>
+
+<?php 
+}?>

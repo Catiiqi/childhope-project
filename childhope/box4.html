@@ -1,0 +1,101 @@
+<?php
+
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChildHope Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+<body>
+
+<section class="sub-header5">
+    <nav>
+        <a href="index.html"><img src="img/logo1.png" alt="Logo"></a>
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-times" onclick="hideMenu()"></i> 
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li> 
+                <li><a href="our_works.html">OUR WORK</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="join us.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+</section>
+<section class="blog-content">
+    <div class="header-contect post-container">
+        <a href="blog.html" class="back-home"><i style='font-size:24px; margin-right:800px;' class='fas'>&#xf060;</i></a>
+        <h1 class="header-title">Advocacy and Awareness</h1>
+        <p>This page aim to highlight the importance of advocacy and raising awareness about children's rights issues, encouraging readers to take action and support the ChildHope Foundation's efforts in making a positive impact.</p>
+        <img src="img/awa.png" alt="" class="header-img">
+    </div>
+</section>
+<section class="post-content post-container">
+    <h2 class="sub-heading"><br><br>Empowering Voices, Enriching Futures: Advocating for Children's Rights</h2>
+    <p class="post-text"></p>Advocacy lies at the heart of our mission at ChildHope Foundation. We are committed to raising awareness 
+    and speaking up for the rights of every child to live in a safe, nurturing environment. Through our advocacy efforts, we strive to 
+    ensure that children have access to education, healthcare, and protection from exploitation and abuse. By amplifying their voices, 
+    we aim to create a brighter future where every child can thrive and reach their full potential.<br>
+
+    <p class="post-text"></p>It is crucial to raise awareness about pressing issues affecting children today. From child poverty and 
+    homelessness to access to quality education and healthcare, we highlight these challenges through our advocacy campaigns. By shedding 
+    light on these issues, we foster a deeper understanding among communities and policymakers, inspiring action and driving positive change.<br>
+
+    <p class="post-text"></p>We amplify the voices of children and youth who are champions of change in their communities. Through storytelling 
+    and testimonials, we share their experiences and aspirations, inspiring others to join us in advocating for a better future for all children. 
+    Their resilience and courage serve as powerful catalysts for advocacy and motivate us to continue our efforts.<br>
+
+     <p class="post-text"></p>
+     Join us in our advocacy journey to create a world where every child's rights are respected and protected. Together, we can raise awareness, influence policies 
+     and empower communities to ensure that every child has the opportunity to thrive. Your support and advocacy are critical in building a brighter 
+     and more equitable future for generations to come.<br>
+      
+</section>
+
+
+<section class="footer">
+    <h4> Let's discuss!</h4>
+    <p>Feel free to ask if you have more questions about the adoption process</p>
+    <div class="icons">
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fas fa-envelope"></i>
+          </div>
+          
+    </div>
+    <hr class="line">
+    <h5>© ChildHope Copyright 2024</h5>
+    
+</section>
+
+</body>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function hideMenu(){
+        navLinks.style.right = "0";
+    }
+    function showMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</html>

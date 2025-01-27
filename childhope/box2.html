@@ -1,0 +1,109 @@
+<?php
+
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChildHope Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+<body>
+
+<section class="sub-header5">
+    <nav>
+        <a href="index.html"><img src="img/logo1.png" alt="Logo"></a>
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-times" onclick="hideMenu()"></i> 
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li> 
+                <li><a href="our_works.html">OUR WORK</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="join us.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+</section>
+<section class="blog-content">
+    <div class="header-contect post-container">
+        <a href="blog.html" class="back-home"><i style='font-size:24px; margin-right:800px;' class='fas'>&#xf060;</i></a>
+        <h1 class="header-title">Campaigns and Fundraising</h1>
+        <p>These page aim to inform and inspire readers about the ChildHope Foundation's campaigns and fundraising activities, encouraging them to take action and support the cause.</p>
+        <img src="img/campaign.jpg" alt="" class="header-img">
+    </div>
+</section>
+<section class="post-content post-container">
+    <h2 class="sub-heading"><br><br>Current Campaigns Overview</h2>
+    <p class="post-text"></p>At ChildHope Foundation, we are committed to making a lasting impact on children's 
+    lives through various campaigns and fundraising efforts. Currently, we are gearing up for our annual "Hope for Tomorrow" campaign, 
+    aimed at raising funds to support underprivileged children's education and healthcare needs. This campaign will focus on providing 
+    essential resources and creating opportunities that empower children to break the cycle of poverty.<br>
+
+    <p class="post-text"></p>Your support during our campaigns directly impacts the lives of vulnerable children. Through donations 
+    and participation in fundraising events, you contribute to initiatives that ensure access to quality education, healthcare services, 
+    and nutritional support for children in need. Every contribution, whether big or small, plays a vital role in transforming lives and
+    building a brighter future for these children.<br>
+
+    <p class="post-text"></p>There are several ways you can get involved in our campaigns and fundraising efforts. You can start by spreading 
+    awareness about our cause among your friends, family, and community. Participate in our fundraising events such as charity runs, 
+    gala dinners, or online auctions. Consider becoming a recurring donor or organizing a fundraising drive at your workplace or school. 
+    Your creativity and dedication can make a significant impact in supporting our mission.<br>
+
+
+     <p class="post-text"></p>
+     Stay tuned for our upcoming events and initiatives as part of our fundraising calendar. From local community events to national campaigns, 
+     there are plenty of opportunities to get involved and make a difference. Whether you're passionate about organizing events, spreading awareness, 
+     or simply making a donation, there's a role for everyone in our efforts to create a brighter future for vulnerable children.<br>
+
+     <p class="post-text"></p>
+     Join us in our mission to create lasting change in the lives of children in need. Your support not only provides immediate assistance but also 
+     lays the foundation for long-term impact. Together, we can ensure that every child has the opportunity to thrive, receive an education, and grow 
+     up in a safe and nurturing environment. Together, let's make a difference and bring hope to children who deserve a brighter tomorrow.<br>
+      
+</section>
+
+
+<section class="footer">
+    <h4> Let's discuss!</h4>
+    <p>Feel free to ask if you have more questions about the adoption process</p>
+    <div class="icons">
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fas fa-envelope"></i>
+          </div>
+          
+    </div>
+    <hr class="line">
+    <h5>© ChildHope Copyright 2024</h5>
+    
+</section>
+
+</body>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function hideMenu(){
+        navLinks.style.right = "0";
+    }
+    function showMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</html>

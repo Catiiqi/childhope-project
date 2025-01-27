@@ -1,0 +1,198 @@
+<?php
+
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChildHope Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	 <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h2 {
+            color: #000;
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px; /* space between each card */
+            padding: 20px;
+        }
+
+        .team-member {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+		   height : 100%;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .team-member .caption {
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        .team-member .role {
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+</head>
+<body>
+
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="img/logo1.png" alt="Logo"></a>
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-times" onclick="hideMenu()"></i> 
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li> 
+                <li><a href="our_works.html">OUR WORK</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="join us.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <h1>We firmly believe that every <br>child deserves <span class="highlight">love and care of a family</span>.</h1><br></br><br><br><br><br><br><br>
+  <br> <h2 style="color: black;">MEET OUR TEAM</h2></br>
+
+	
+ <div class="team-container">
+        <!-- Step 3: Insert Images and Captions -->
+        <div class="team-member">
+            <img src="img/dv.jpg" alt="Member 1">
+            <div class="caption">
+                <p class="role">HUMAN RESOURCES</p>
+                <p>Diviya</p>
+            </div>
+        </div>
+		  <div class="team-member">
+            <img src="img/prasanth1.png" alt="Member 2">
+            <div class="caption">
+                <p class="role">SUPERVISOR</p>
+                <p>Prasanth</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="img/wa.jpg" alt="Member 3">
+            <div class="caption">
+                <p class="role">SOCIAL MEDIA MANAGER</p>
+                <p>Wakidah</p>
+            </div>
+        </div>
+      
+        <div class="team-member">
+            <img src="img/fahad.jpg" alt="Member 4">
+            <div class="caption">
+                <p class="role">ADMINISTRATION OFFICER</p>
+                <p>Fahad</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="img/dini.jpg"  alt="Member 5">
+            <div class="caption">
+                <p class="role">FINANCE</p>
+                <p>Nazifah</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- VISION AND MISSION  -->
+<section class="vm">
+    <div class="vm-row">
+        <div class="vm-col">
+            <i class="fas fa-rocket"></i>
+            <div>
+                <h3>Our Vision</h3>
+                <p>ChildHope Foundation envisions a world where children flourish in 
+                    family care, safe from threats to their well-being.</p>
+            </div>
+        </div>
+        <div class="vm-col">
+            <i class="fas fa-crosshairs"></i>
+            <div>
+                <h3>Our Mission</h3>
+                <p>ChildHope Foundation's mission is to place children in 
+                    loving families for their safety and well-being.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- OUR GOALS -->
+<section class="goals">
+    <div class="row">
+        <div class="goals-col">
+            <h1>Our Purpose</h1>
+            <p>Is to ensure children are raised in loving families rather than institutions. 
+                At the heart of our mission is the belief that every child deserves love, security, shelter, health 
+                and education. We are driven by our commitment to protect children from the harmful effects of institutional care.</p>
+                
+             </div>
+             <div class="goals-col">
+                <img src="img/goals1.png">
+        </div>
+    </div>
+
+
+<section class="footer">
+    <h4> Let's discuss!</h4>
+    <p>Feel free to ask if you have more questions about the adoption process</p>
+    <div class="icons">
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fas fa-envelope"></i>
+          </div>
+          
+    </div>
+    <hr class="line">
+    <h5>© ChildHope Copyright 2024</h5>
+</section>
+
+
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function hideMenu(){
+        navLinks.style.right = "0";
+    }
+    function showMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
+

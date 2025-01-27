@@ -1,0 +1,103 @@
+<?php
+
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChildHope Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+<body>
+
+<section class="sub-header5">
+    <nav>
+        <a href="index.html"><img src="img/logo1.png" alt="Logo"></a>
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-times" onclick="hideMenu()"></i> 
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li> 
+                <li><a href="our_works.html">OUR WORK</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="join us.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+</section>
+<section class="blog-content">
+    <div class="header-contect post-container">
+        <a href="blog.html" class="back-home"><i style='font-size:24px; margin-right:800px;' class='fas'>&#xf060;</i></a>
+        <h1 class="header-title">Donor and Volunteer Recognition</h1>
+        <p>This page aim to recognize and express gratitude to donors, sponsors, and volunteers for their invaluable contributions to the ChildHope Foundation's mission of supporting vulnerable children.</p>
+        <img src="img/volun.jpg" alt="" class="header-img">
+    </div>
+</section>
+<section class="post-content post-container">
+    <h2 class="sub-heading"><br><br>Celebrating Our Champions: Honoring Those Who Make a Difference</h2>
+    <p class="post-text"></p>At ChildHope Foundation, we deeply value the support and dedication of our donors, sponsors, and volunteers. 
+    Your generosity and commitment play a pivotal role in advancing our mission to improve the lives of vulnerable children. Whether you 
+    have contributed financially, volunteered your time, or advocated for our cause, your efforts have made a significant impact and are 
+    sincerely appreciated.<br>
+
+    <p class="post-text"></p>Your contributions have directly transformed the lives of children in need. Through your donations, we have 
+    been able to provide essential resources such as education, healthcare, and nutrition, ensuring that every child has the opportunity 
+    to thrive. Your involvement as volunteers has also enriched our programs, bringing hope and encouragement to children and families 
+    facing adversity.<br>
+
+    <p class="post-text"></p>We take pride in celebrating the milestones achieved together with our supporters. From successful fundraising 
+    campaigns to impactful community events, each achievement reflects your dedication and belief in our mission. Your support fuels our 
+    determination to continue making a difference and inspires others to join us in creating positive change.<br>
+
+     <p class="post-text"></p>
+     To all our donors, sponsors, and volunteers, we extend a heartfelt invitation to continue your support and involvement with ChildHope 
+     Foundation. Together, we can expand our impact, reach more children in need, and create brighter futures. Your ongoing commitment 
+     inspires us to strive for excellence and ensures that every child receives the care and opportunities they deserve. 
+     Thank you for being the heart of our mission.<br>
+      
+</section>
+
+
+<section class="footer">
+    <h4> Let's discuss!</h4>
+    <p>Feel free to ask if you have more questions about the adoption process</p>
+    <div class="icons">
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fas fa-envelope"></i>
+          </div>
+          
+    </div>
+    <hr class="line">
+    <h5>© ChildHope Copyright 2024</h5>
+    
+</section>
+
+</body>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function hideMenu(){
+        navLinks.style.right = "0";
+    }
+    function showMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</html>

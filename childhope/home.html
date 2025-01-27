@@ -1,0 +1,223 @@
+<?php
+
+session_start();
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChildHope Foundation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+
+</head>
+<body>
+
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="img/logo1.png" alt="Logo"></a>
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-times" onclick="hideMenu()"></i> 
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li> 
+                <li><a href="our_works.html">OUR WORK</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="join us.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+
+    <div class="text-box">
+        <h1>Every Child Deserves a Loving Home</h1>
+        <p> ChildHope Foundation is dedicated to providing children in need and unplanned newborns<br>with the chance to thrive in loving and supportive family environments.
+        </p>
+        <h3>🔽If You Want to Become a Member🔽</h3>
+        <a href="login.html" class="hero-btn">Sign Up</a>
+    </div>
+</section>
+
+<!-- SEE OUR WORK -->
+<section class="our">
+    <h1>EXPLORE OUR IMPACT</h1>
+    <p>Our vision is a world where children thrive in family 
+       care and are free from threats to their survival.</p>
+
+    <div class="row">
+        <div class="our-col">
+            <h3>Adoption</h3>
+            <p>We offer support to couples in Malaysia throughout the adoption process, helping 
+                them every step of the way. At ChildHope Foundation, we assist you in finding  
+                the ideal match for your future children and provide three different adoption options.  
+                Allow us to assist you as you begin your adoption process.</p>
+        </div>
+        <div class="our-col">
+            <h3>Reintegration</h3>
+            <p>Reintegration is the process of carefully returning a kid from an institution to their family. 
+                A kid may be adopted if they are unable to reintegrate with their biological parents or other family members.
+                Child safety and well-being are the top priorities of ChildHope's reintegration programme.</p>
+        </div>
+        <div class="our-col">
+            <h3>Counselling</h3>
+            <p>The ChildHope Foundation offers therapy to specific clients, including young girls 
+                and women dealing with an unwanted pregnancy as well as children and their families 
+                going through the reintegration process. The client receives counselling to assist them 
+                deal with a possibly extremely stressful circumstance.</p>
+        </div>
+    </div>
+    </section>
+
+<!-- VIDEO PLAY -->
+<section>
+    <div class="video">
+        <h1>Discover how ChildHope Foundation creates a positive impact</h1><br><br>
+        <video src="img/video.mp4" controls class="resized-video"></video>
+    </div>
+</section>
+
+<!-- COMMITTED TO HELP -->
+<section class="committed">
+    <h1>We are Dedicated to Making a Difference</h1>
+    <p> Our vision is a world where children thrive in family care and are free from threats to their survival.</p>
+
+    <div class="row">
+        <div class="committed-col">
+            <img src="img/vision1.jpg">
+        <div class="layer">
+            <h3>WE PRIORITIZE</h3>
+        </div>
+        </div>
+            <div class="committed-col">
+                <img src="img/vision2.jpg">
+            <div class="layer">
+                <h3>WE SUPPORT</h3>
+        </div>
+        </div>
+            <div class="committed-col">
+                <img src="img/vis3.jpg">
+            <div class="layer">
+                <h3>WE CHERISH</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OUR VALUE -->
+<section class="value">
+    <br><h1>Our Core Principles</h1>
+    <div class="row">
+        <div class="value-col">
+            <i class="fas fa-balance-scale"></i>
+            <h3>INTEGRITY</h3>
+            <p class="value-text">Our guiding principles prioritize the best interests of children and uphold the dignity and well-being of those we support, in alignment with our commitment to excellence.</p>
+        </div>
+        <div class="value-col">
+            <i class="fas fa-handshake"></i>
+            <h3>ETHICAL</h3>
+            <p class="value-text">We provide ethical adoptions following global standards.</p>
+        </div>
+        <div class="value-col">
+            <i class="fas fa-home"></i>
+            <h3>RESPECT</h3>
+            <p class="value-text">We are unbiased, serving all ethnicities with respect, strict confidentiality, and without judgment.</p><br>
+        </div>
+    </div>
+</section>
+
+
+<!-- DONATION -->
+<section class="donate">
+    <h1>Each donation makes a significant impact</h1>
+    <h3>Stand with ChildHope Foundation Today</h3>
+
+    <div class="row">
+        <button class="donate-btn">DONATE NOW</button>
+      </div>
+      <div class="modal-overlay"></div>
+      <div class="modal-box">
+        <i class="fa-regular fa-circle-check"></i>
+        <h2>Payment Method</h2>
+        <p>Select your preferred payment method:</p>
+        <div class="payment-methods">
+          <input type="radio" id="paypal" name="payment-method" value="paypal">
+          <label for="paypal"><img src="img/paypal.png" alt="PayPal"></label>
+          
+          <input type="radio" id="master-card" name="payment-method" value="master-card">
+          <label for="master-card"><img src="img/mastercard.png" alt="MasterCard"></label>
+          
+          <input type="radio" id="fpx" name="payment-method" value="fpx">
+          <label for="fpx"><img src="img/fpx.png" alt="FPX"></label>
+          
+          <input type="radio" id="apple-pay" name="payment-method" value="apple-pay">
+          <label for="apple-pay"><img src="img/apple-pay.png" alt="Apple Pay"></label>
+          
+          <input type="radio" id="visa" name="payment-method" value="visa">
+          <label for="visa"><img src="img/visa.png" alt="Visa"></label>
+        </div>
+        <button class="confirm-btn">Confirm Donation</button>
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+      </div>
+</section>
+
+<!-- FOOTER -->
+<section class="footer">
+    <h4> Let's discuss!</h4>
+    <p>Feel free to ask if you have more questions about the adoption process</p>
+    <div class="icons">
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fas fa-envelope"></i>
+          </div>
+          
+    </div>
+    <hr class="line">
+    <h5>© ChildHope Copyright 2024</h5>
+    
+</section>
+<section>  
+</section>
+
+<script>
+
+    document.querySelector('.donate-btn').addEventListener('click', () => {
+  document.querySelector('.modal-overlay').style.display = 'block';
+  document.querySelector('.modal-box').style.display = 'block';
+});
+
+document.querySelector('.close-btn').addEventListener('click', () => {
+  document.querySelector('.modal-overlay').style.display = 'none';
+  document.querySelector('.modal-box').style.display = 'none';
+});
+
+document.querySelector('.confirm-btn').addEventListener('click', () => {
+  // Add your confirmation logic here
+  alert('Donation confirmed!');
+  document.querySelector('.modal-overlay').style.display = 'none';
+  document.querySelector('.modal-box').style.display = 'none';
+});
+
+    var navLinks = document.getElementById("navLinks");
+    function hideMenu(){
+        navLinks.style.right = "0";
+    }
+    function showMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
+
+
